@@ -1,5 +1,8 @@
 language: node_js
+node_js:
+  - "iojs"
+  - "7"
 install:
  npm install -g firebase-tools
 after_success:
- firebase deploy --project z-yazilim --token $FIREBASE_TOKEN
+ firebase deploy --project travisdeploydemo --token $FIREBASE_TOKEN
